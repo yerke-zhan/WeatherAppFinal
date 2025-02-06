@@ -57,7 +57,7 @@ async function displayWeather(city) {
         const data = await response.json();
         console.log(data);
 
-        document.getElementById('cityName').textContent = `${city}, город ${city}`;
+        document.getElementById('cityName').textContent = `${city} қаласы`;
 
         console.log(data)
 
@@ -69,12 +69,9 @@ async function displayWeather(city) {
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAatJREFUaN7tmdGNhSAQRS3BEijhlUAJlmAJljAlWIIlbAmW8H79swQ7YCEZEuIKDjiIbiC5Pz6i98B4mfgapVTzZr3afAWoABWgAjwMIGYsyyJRn6bQiAbQZlutSWvTUo5WLXg0gDYo0KgKaHoywPfEvBU8DkCb6onmrcxudVojajDXSgL8RALcsjsxADMTgNH4doAJ02zcpZkJiI4VAB8EB7GZqi8hEHoWAHNAMRq36giBYJ7ZXgLIZF4llKPxMKQAfLnN48q3ifceyAC4zTnMfwgnuXcnYgCA2fyMK78eXO+dprAnltdmX3QfwJRp9WfnvbLl1OOCwe4a5b7yjh2AfaJgm+ErpxV/o0CAD2BgXHmxK4sN7x96F1bciTkVQGSs+xh46ZTXkUQoRkeGA+vKTgJLK3FlMITBdtZWZAMg1jBVsgQA50kOHO30aV06sSkW3nMkHcBJApssQJnDLHEFAI46ytg5uUaWEmpuHDEAEEoD6pxiAE8dwWaOsNrFif8AoLHZiUTpMR+cUxLgNINLfkr8/yWE5iQhMmXJlfcC1L+YKkAFqAAVIFa/mfArO5CvUjAAAAAASUVORK5CYII=" alt="">
             <div class="weather" id="weatherInfo"> 
                 <p> Температура: ${data.main.temp}°C </p>
-                <p> Максимальная температура: ${data.main.temp_max}°C </p>
-                <p> Минимальная температура: ${data.main.temp_min}°C </p>
                 <p> Ылғалдылық: ${data.main.humidity}% </p>
                 <p> Бұлт: ${data.clouds.all}% </p>
                 <p> Жел: ${data.wind.speed} м/с </p>
-                <p> Описание: ${data.weather[0].description} </p>
             </div>
         `;
 
