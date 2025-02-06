@@ -4,9 +4,8 @@
 
 body{
     background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-}
 
-header{
+.main{
     background-color: black;
     color: white;
     padding: 10px;
@@ -28,17 +27,24 @@ nav{
     justify-content: space-between;
  
 }
-button{
-    border-radius: 5px;
-
+img{
+    height: 20px;
 }
-
-
+.inputBtn{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;   
+}
 
 .search{
     display: flex;
-    width: 20%;
+    width: 80%;
     
+}
+    button{
+    border-radius: 5px;
+    border-color: rgba(6, 51, 136, 0.853);
+
 }
 
 .city{
@@ -47,7 +53,6 @@ button{
     justify-content: center;
     height: auto;
     margin: 0 auto;
-    
     
     background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)§;
     color: white;
