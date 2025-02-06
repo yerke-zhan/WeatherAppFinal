@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://www.accuweather.com/" alt="">
+        </div>
+
+        <h1>AccuWeather</h1>
+        <p id="cityName"> Алматы, город Алматы </p>
+        <input class="search" id="searchInput" type="search" placeholder="Поиск">
+        <button onclick="searchWeather()">Іздеу</button>
+
+    </header>
+    <nav>
+       
+           <button onclick="showAlmatyWeather('Алматы')">Алматы</button>
+           <button onclick ="showKazakhstanWeather()">Қазақстан</button>
+     
+    </nav>
+
+    <main> 
+       
+<div class="city">
+</div>
+
+
+        
+    </main>
+
+
+    <script src="weatherSite.js"></script>
+</body>
+</html>
